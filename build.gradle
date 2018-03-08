@@ -1,0 +1,32 @@
+apply plugin: 'java-library'
+
+repositories {
+    jcenter()
+    mavenCentral();
+}
+
+dependencies {
+
+	compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-grizzly2-http', version: '2.13'
+    compile group: 'com.sun.jersey', name: 'jersey-grizzly', version: '1.18.2'
+    compile group: 'com.sun.jersey.contribs', name: 'jersey-multipart', version: '1.18.2'
+    compile group: 'org.glassfish.grizzly', name: 'grizzly-http-server-multipart', version: '2.4.0'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.2.5'
+   	compile group: 'org.apache.httpcomponents', name: 'httpclient-cache', version: '4.2.5'
+	compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.2.4'
+	compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.2.5'
+	compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.3.1'
+	
+	compile group: 'com.sun.jersey',name: 'jersey-client', version:'1.9.1'
+	
+
+
+	compile group: 'org.iq80.leveldb', name: 'leveldb-api', version: '0.10'
+	compile group: 'org.iq80.leveldb', name: 'leveldb', version: '0.10'
+	
+	
+    api 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.google.guava:guava:21.0'
+    testImplementation 'junit:junit:4.12'
+}
+
